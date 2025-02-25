@@ -13,16 +13,102 @@
         <button id="shop">Shop</button>
         <button id="login">Login</button>
         <button id="signup">Signup</button>
+        <style>
+            @font-face {
+                font-family: 'Cupcake';
+                src: url('honey_salt/Honey_Salt.otf') format('opentype');
+            }
+            
+            *{
+                margin: 0px;
+                padding: 0px;
+                font-family: 'Cupcake';
+                
+            }
+            
+            .button_bar{
+                background-color: rgb(253, 204, 212);
+                padding: 25px;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+                justify-content: space-evenly;
+                border-radius: 20px;
+                border: none;
+                gap:30px;
+                
+            }
+            
+            #home,
+            #about,
+            #shop,
+            #login, 
+            #signup{
+                border-radius: 20px;
+                border: none;
+                font-size: 20px;
+                font-weight: bold;
+                padding: 20px;
+                transition: 0.5s;
+                background-color: white;
+            }
+            #home:hover,
+            #about:hover,
+            #shop:hover,
+            #login:hover,
+            #signup:hover{
+                
+                scale: 1.2;
+
+            }
+
+        </style>
     </div>
 </body>
 <body>
     <div class="banner">
-        <img src= "colorful-sprinkles-banner-background-colorful-falling-decorative-sprinkles-background_322958-3845.avif">
         <div class="banner_text">
             <h1>WELCOME TO OUR WEBSITE</h1>
-            <p>Here you can find the best products for your home</p>
+            <p>Here you can find the best cupcakes in the RGV</p>
+        </div>   
     </div>
 
+    <style>
+        .banner{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background-color: rgb(231, 193, 146);
+            border-radius: 20px;
+            margin-top: 100px;
+            height: 300px; /* Adjusts height*/
+            border: solid;
+            border-width: 10px;
+            border-color: rgb(174, 110, 87);
+        }
+    </style>
+
+    <div class="about">
+        <h1>About Us!</h1>
+        <p>Our cupcakes are made with the best ingredients and with love. We have a variety of flavors to choose from. We also have vegan and gluten free options. We are located in the RGV and we deliver to your door. </p>
+    </div>
+
+    <style>
+        .about{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-column: 1/3;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background-color: rgb(253, 204, 212);
+            
+            padding: 20px;
+            border-radius: 20px;
+            margin-top: 50px;
+            
+        }
+    </style>
 </body>
 
 </html>
